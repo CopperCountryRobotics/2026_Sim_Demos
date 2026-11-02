@@ -6,6 +6,11 @@ import edu.wpi.first.wpilibj.util.Color8Bit;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.team3602.robot.subsystems.ElevatorSubsystem;
 
+/**
+ * Custom utils class to use in Simulation
+ * requires adding each simulated subsystem and info
+ * Author: C Furmanski (clydestale158)
+ */
 public class Simulation extends SubsystemBase {
     private ElevatorSubsystem elevSusbsys;
 

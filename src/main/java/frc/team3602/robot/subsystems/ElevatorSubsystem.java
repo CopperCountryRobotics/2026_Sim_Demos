@@ -16,14 +16,16 @@ import edu.wpi.first.math.MathUtil;
 import edu.wpi.first.math.controller.ElevatorFeedforward;
 import edu.wpi.first.math.controller.PIDController;
 import edu.wpi.first.math.system.plant.DCMotor;
-import edu.wpi.first.math.util.Units;
 import edu.wpi.first.wpilibj.RobotBase;
 import edu.wpi.first.wpilibj.simulation.ElevatorSim;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
-/** just an elevator subsystem that does NOT use motion magic. **USE THIS** */
+/** 
+ * CTRE elevator subsystem. Compatable with simulations
+ * Author: C Furmanski (clydestale158)
+ */
 public class ElevatorSubsystem extends SubsystemBase {
     // Motors
     private final TalonFX motor = new TalonFX(ELEV_LEAD_MOTOR_ID);
